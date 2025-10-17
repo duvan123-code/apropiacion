@@ -166,6 +166,25 @@ div section2 p::after {
     background-color: #47b2ff;
     margin: 8px 0;
 }
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper::before {
+  content: '🔍';
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #888;
+}
+
+.input-with-icon {
+  padding-left: 30px;
+  height: 36px;
+  font-size: 14px;
+}
 
 .sombra {
     position: relative;
